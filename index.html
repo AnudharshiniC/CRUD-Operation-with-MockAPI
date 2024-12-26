@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with MockAPI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+    
+
+    <body>
+        <div class="container">
+            <h4>Add User</h4>
+            <div class="form-group">
+                <label for="name">Enter Name</label>
+                <input type="text" required id="name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Email</label>
+                <input type="email" required id="email" placeholder="Enter email">
+            </div>
+            <button class="btn" onclick="submitForm()">Submit</button>
+            <p id="message" class="message"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbData"></tbody>
+            </table>
+        </div>
+    </body>
+    </html>
